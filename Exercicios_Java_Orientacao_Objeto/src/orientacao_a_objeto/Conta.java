@@ -4,5 +4,5 @@ public class Conta {
 
 	int numero;
 	double saldo;
-	double limite;
+	double limite = 100;
 }
