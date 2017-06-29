@@ -1,6 +1,6 @@
 package orientacao_a_objeto;
 
-public class Teste_cliente {
+public class Teste_Cliente {
 	public static void main(String[] args) {
 
 		// criando um objeto
