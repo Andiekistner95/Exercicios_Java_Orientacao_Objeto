@@ -1,7 +1,10 @@
 package orientacao_a_objeto;
 
+import java.util.Date;
+
 public class CartaoDeCredito {
 
 		long numero;
-		String dataValidade;
+		Date dataValidade;
+		Cliente cliente;
 }
