@@ -9,11 +9,11 @@ public class Conta {
 	double limite = 100d;
 	Agencia agencia;
 
-	void deposita(double valor) {
+	public void deposita(double valor) {
 		this.saldo += valor;
 	}
 
-	void saque(double valor) {
+	public void saque(double valor) {
 		this.saldo -= valor;
 
 	}
@@ -25,9 +25,11 @@ public class Conta {
 
 	public String extrato() {
 		DecimalFormat df = new DecimalFormat("#0.00");
-		
-		String extrato = "Numero conta: " + this.numero + "\nSaldo: R$" + df.format(this.saldo) + "\nLimite: R$" + df.format(this.limite)
-				+ "\nAgencia: " + this.agencia.numero;
+
+		String extrato = "Numero conta: " + this.numero;
+		extrato += "\nSaldo: R$" + df.format(this.saldo);
+		extrato += "\nLimite: R$" + df.format(this.limite);
+		extrato += "\nAgencia: " + this.agencia.numero;
 		return extrato;
 	}
 

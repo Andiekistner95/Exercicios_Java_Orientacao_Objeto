@@ -30,12 +30,11 @@ public class Teste_Conta_Agencia {
 		System.out.println();
 
 			conta1.deposita(259.99);
-
+			conta1.saque(325.95);
+			
 		System.out.println();
 
 		System.out.println(conta1.extrato());
-		
-			conta1.saque(325.95);
 			
 		System.out.println();
 
