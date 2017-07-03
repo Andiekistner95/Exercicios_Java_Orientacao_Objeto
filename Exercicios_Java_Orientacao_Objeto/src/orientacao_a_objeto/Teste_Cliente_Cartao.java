@@ -8,8 +8,7 @@ public class Teste_Cliente_Cartao {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 
-		CartaoDeCredito cdc1 = new CartaoDeCredito();
-		cdc1.numero = 124578986532l;
+		CartaoDeCredito cdc1 = new CartaoDeCredito(124578986532l);
 		cdc1.dataValidade = sdf.parse("12/02/2019");
 		
 		Cliente cliente1 = new Cliente();

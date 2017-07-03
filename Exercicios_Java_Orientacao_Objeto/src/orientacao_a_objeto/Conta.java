@@ -32,5 +32,17 @@ public class Conta {
 		extrato += "\nAgencia: " + this.agencia.numero;
 		return extrato;
 	}
-
+	
+	public Conta(String numero) {
+		this.numero = numero;
+	}
+	public Conta(String numero,Agencia agencia) {
+		this(numero);
+		this.agencia = agencia;
+	}
+	
+	public void transferencia(Conta destino, double valor){
+		this.saldo -= valor;
+		destino.saldo += valor;
+	}
 }
