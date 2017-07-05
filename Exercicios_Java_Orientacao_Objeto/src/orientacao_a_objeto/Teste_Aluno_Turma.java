@@ -8,6 +8,27 @@ public class Teste_Aluno_Turma {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 
 		Aluno aluno1 = new Aluno();
+		aluno1.setNome("William");
+		aluno1.setRg("0216565949-2");;
+		aluno1.setDtNascimento(sdf.parse("30/03/1995"));
+
+		Turma turma1 = new Turma();
+		turma1.setSerie(8);
+		turma1.setEnsino("Médio");
+		turma1.setSigla("8-1");
+		turma1.setPeriodo('n');
+
+		aluno1.setTurma(turma1);
+		
+		System.out.println("Nome: " + aluno1.getNome() + 
+				" \nRg: " + aluno1.getRg() + 
+				" \nDt Nascimento: " + sdf.format(aluno1.getDtNascimento()) + 
+				" \nSerie: " + turma1.getSerie() +
+				" \nEnsino: " + turma1.getEnsino() +
+				" \nSigla: " + turma1.getSigla() +
+				" \nPeriodo: " + turma1.getPeriodo());
+	
+		/*Aluno aluno1 = new Aluno();
 		aluno1.nome = "William";
 		aluno1.rg = "0216565949-2";
 		aluno1.dtNascimento = sdf.parse("30/03/1995");
@@ -26,6 +47,8 @@ public class Teste_Aluno_Turma {
 				" \nSerie: " + turma1.serie +
 				" \nEnsino: " + turma1.ensino +
 				" \nSigla: " + turma1.sigla +
-				" \nPeriodo: " + turma1.periodo);
+				" \nPeriodo: " + turma1.periodo);*/
+	
 	}
+
 }

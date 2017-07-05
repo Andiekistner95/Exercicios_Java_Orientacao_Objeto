@@ -6,9 +6,9 @@ public class Teste_Agencia {
 		Agencia ag1 = new Agencia(3012);
 		Agencia ag2 = new Agencia(3013);
 		
-		System.out.println("Agencia número: " + ag1.numero);
+		System.out.println("Agencia número: " + ag1.getNumero());
 		
-		System.out.println("Agencia número: " + ag2.numero);
+		System.out.println("Agencia número: " + ag2.getNumero());
 		
 
 	}

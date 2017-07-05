@@ -4,12 +4,52 @@ import java.text.DecimalFormat;
 
 public class Conta {
 
-	String numero;
-	double saldo;
-	double limite = 100d;
-	Agencia agencia;
-	static int contasCriadas;
-	int idConta;
+	private String numero;
+	private double saldo;
+	private double limite = 100d;
+	private Agencia agencia;
+	public static int contasCriadas;
+	private int idConta;
+
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+
+	public Agencia getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(Agencia agencia) {
+		this.agencia = agencia;
+	}
+
+	public int getIdConta() {
+		return idConta;
+	}
+
+	public void setIdConta(int idConta) {
+		this.idConta = idConta;
+	}
 
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -31,7 +71,7 @@ public class Conta {
 		String extrato = "Numero conta: " + this.numero;
 		extrato += "\nSaldo: R$" + df.format(this.saldo);
 		extrato += "\nLimite: R$" + df.format(this.limite);
-		extrato += "\nAgencia: " + this.agencia.numero;
+		extrato += "\nAgencia: " + this.agencia.getNumero();
 		return extrato;
 	}
 	//Construtor da conta. Utilizando numero como parametro

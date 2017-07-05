@@ -10,17 +10,17 @@ public static void main(String[] args) throws ParseException {
 	Aluno aluno1 = new Aluno();
 	Aluno aluno2 = new Aluno();
 	
-	aluno1.nome = "William";
-	aluno1.rg = "091456789-1";
-	aluno1.dtNascimento = sdf.parse("30/03/1993");
+	aluno1.setNome("William");
+	aluno1.setRg("091456789-1");
+	aluno1.setDtNascimento(sdf.parse("30/03/1993"));
 	
-	aluno2.nome = "Andiara";
+	/*aluno2.nome = "Andiara";
 	aluno2.rg = "091456789-2";
-	aluno2.dtNascimento = sdf.parse("31/10/1995");
+	aluno2.dtNascimento = sdf.parse("31/10/1995");*/
 	
-	System.out.println("Nome: " + aluno1.nome + " RG: " + aluno1.rg + " Data nascimento: " + sdf.format(aluno1.dtNascimento));
+	System.out.println("Nome: " + aluno1.getNome() + " RG: " + aluno1.getRg() + " Data nascimento: " + sdf.format(aluno1.getDtNascimento()));
 	
-	System.out.println("Nome: " + aluno2.nome + " RG: " + aluno2.rg + " Data nascimento: " + sdf.format(aluno2.dtNascimento));
+	//System.out.println("Nome: " + aluno2.nome + " RG: " + aluno2.rg + " Data nascimento: " + sdf.format(aluno2.dtNascimento));
 	
 	
 }

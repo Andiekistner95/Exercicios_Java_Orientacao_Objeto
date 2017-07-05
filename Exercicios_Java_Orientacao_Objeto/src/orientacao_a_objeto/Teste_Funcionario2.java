@@ -7,7 +7,7 @@ public class Teste_Funcionario2 {
 
 		Funcionario funcionario = new Funcionario();
 		
-		funcionario.nome = JOptionPane.showInputDialog("Informe o nome do funcionário");
+		/*funcionario.nome = JOptionPane.showInputDialog("Informe o nome do funcionário");
 		funcionario.salario = Double.parseDouble(JOptionPane.showInputDialog("Informe o salário do funcionário"));
 		
 		JOptionPane.showMessageDialog(null, funcionario.consultaFuncionario());
@@ -28,7 +28,8 @@ public class Teste_Funcionario2 {
 			
 			if (imprimir == 0 ){
 				JOptionPane.showMessageDialog(null, funcionario.consultaFuncionario());
+				
 			}
-		}
+		}*/
 	}
 }
