@@ -5,13 +5,14 @@ import java.util.Arrays;
 public class Classe {
 	public static void main(String[] args) {
 
-		int[] numeros = new int[15];
+		int[] numeros = new int[]{5,10,15,20,25,30,35,0};
 
-		for (int i = 0; i < numeros.length; i++) {
-			numeros[i] = i;
-			// System.out.println("Posição:" + i + " Valor: " + numeros[i]);
+		for (int num : numeros) {
+			System.out.print(num + " ");
+
 		}
-
+		System.out.println();
+		
 		String[] nome = new String[] { "Alison", "Alicia", "Alana", "Andiara" };
 
 		Arrays.sort(nome);

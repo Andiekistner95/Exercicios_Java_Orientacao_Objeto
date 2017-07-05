@@ -8,6 +8,8 @@ public class Conta {
 	double saldo;
 	double limite = 100d;
 	Agencia agencia;
+	static int contasCriadas;
+	int idConta;
 
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -32,17 +34,37 @@ public class Conta {
 		extrato += "\nAgencia: " + this.agencia.numero;
 		return extrato;
 	}
-	
+	//Construtor da conta. Utilizando numero como parametro
 	public Conta(String numero) {
 		this.numero = numero;
+		this.contagemContas();
 	}
+	//Construtor da conta. Utilizando numero  e agencia como parametro
 	public Conta(String numero,Agencia agencia) {
 		this(numero);
 		this.agencia = agencia;
+		this.contagemContas();
 	}
 	
 	public void transferencia(Conta destino, double valor){
 		this.saldo -= valor;
 		destino.saldo += valor;
+	}
+	//incrementa a quantidade de contas criadas a cada instancia de objeto
+	public void contagemContas(){
+		this.contasCriadas += 1;
+		this.idConta = contasCriadas;
+	}
+	//retorna a qnt total de contas criadas pela classe
+	public static int totalContas(){
+		return contasCriadas;
+	}
+	//retorna o id da conta(tipo codigo unico em SQL)
+	public int consultaId(){
+		return this.idConta;
+	}
+	public static void zerarContador(){
+		System.out.println(Conta.contasCriadas);
+	Conta.contasCriadas = 0;
 	}
 }
