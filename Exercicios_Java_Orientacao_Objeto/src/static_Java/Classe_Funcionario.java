@@ -1,4 +1,4 @@
-package estatico;
+package static_Java;
 
 import java.text.DecimalFormat;
 

@@ -1,4 +1,4 @@
-package estatico;
+package static_Java;
 
 import orientacao_a_objeto.Conta;
 
