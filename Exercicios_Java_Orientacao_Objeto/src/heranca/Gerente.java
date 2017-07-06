@@ -29,4 +29,9 @@ public class Gerente extends Funcionario {
 		this.senha = senha;
 	}
 	
+	@Override
+	public void calculoBonificacao() {
+		setBonificacao(getSalario()*0.10);
+		
+	}
 }

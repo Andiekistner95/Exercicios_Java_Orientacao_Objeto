@@ -22,10 +22,29 @@ public class Teste_Heranca {
 		s1.setSalario(2300.00d);
 		s1.setNumRamal("357");
 
+		System.out.println("Gerente: R$"+df.format(g1.getSalario()) +"\nSecretaria: R$"+ df.format(s1.getSalario()) +"\nTelefonista: R$" + df.format(t1.getSalario()));
+		
 		g1.aumentoSalario(15);
 		t1.aumentoSalario(20);
 		s1.aumentoSalario(25);
 		
-		System.out.println(g1.getSalario() +" "+ s1.getSalario() +" " + t1.getSalario());
+		System.out.println();
+		
+		System.out.println("Gerente: R$"+df.format(g1.getSalario()) +"\nSecretaria: R$"+ df.format(s1.getSalario()) +"\nTelefonista: R$" + df.format(t1.getSalario()));
+		
+		s1.calculoBonificacao();
+		t1.calculoBonificacao();
+		g1.calculoBonificacao();
+		
+		System.out.println();
+		
+		System.out.println("Gerente: R$"+df.format(g1.getBonificacao()));
+
+		System.out.println();
+		
+		g1.mostrarDados();
+		s1.mostrarDados();
+		t1.mostrarDados();
+		
 	}
 }
