@@ -22,5 +22,10 @@ public class Teste_Heranca {
 		s1.setSalario(2300.00d);
 		s1.setNumRamal("357");
 
+		g1.aumentoSalario(15);
+		t1.aumentoSalario(20);
+		s1.aumentoSalario(25);
+		
+		System.out.println(g1.getSalario() +" "+ s1.getSalario() +" " + t1.getSalario());
 	}
 }
