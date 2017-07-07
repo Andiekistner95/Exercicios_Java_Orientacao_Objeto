@@ -9,6 +9,7 @@ public class Gerente extends Funcionario {
 	}
 
 	public Gerente(String usuario, String senha) {
+		super();
 		this.usuario = usuario;
 		this.senha = senha;
 	}
