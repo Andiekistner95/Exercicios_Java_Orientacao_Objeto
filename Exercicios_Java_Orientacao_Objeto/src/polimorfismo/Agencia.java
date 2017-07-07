@@ -1,6 +1,8 @@
 package polimorfismo;
 
 public class Agencia {
+	
+	
 	private int numero;
 	
 	public int getNumero() {
@@ -14,5 +16,10 @@ public class Agencia {
 	public Agencia(int numero) {
 	this.numero = numero;
 	}
+	
+	public Agencia() {
+
+	}
+
 }
 //alt + shift + s (atalho getters and setters)

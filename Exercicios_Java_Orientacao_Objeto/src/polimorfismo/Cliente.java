@@ -16,5 +16,13 @@ public class Cliente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	public Cliente() {
+
+	}
+	public Cliente(int codigo, String nome) {
+		this.codigo = codigo;
+		this.nome = nome;
+	}
 
 }
