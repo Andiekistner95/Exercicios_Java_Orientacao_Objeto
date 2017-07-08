@@ -1,8 +1,8 @@
-package polimorfismo;
+package classes_abstratas;
 
 import java.text.DecimalFormat;
 
-public class Conta {
+public abstract class Conta {
 
 	private String numero;
 	private Agencia agencia;
@@ -45,6 +45,9 @@ public class Conta {
 		this.cliente = cliente;
 		this.numero = numero;
 		this.saldo = saldo;
+	
 	}
-		
+	
+	public abstract void gerarExtrato(Conta conta);
+	
 }
