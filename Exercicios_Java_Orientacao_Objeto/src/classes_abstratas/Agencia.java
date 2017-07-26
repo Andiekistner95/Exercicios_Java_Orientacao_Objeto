@@ -1,5 +1,13 @@
+/**
+ * Pacote para armazenar classes abstratas.
+ */
 package classes_abstratas;
-
+/**
+ * 
+ * @author Andiara
+ * Classe responsável por definir a estrutura do objeto agencia.
+ *
+ */
 public class Agencia {
 	
 	

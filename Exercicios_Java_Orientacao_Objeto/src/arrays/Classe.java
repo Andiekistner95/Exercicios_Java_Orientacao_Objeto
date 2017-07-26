@@ -1,18 +1,28 @@
+/**
+ * Pacote criado para armazenar a classe referente a array.
+ */
 package arrays;
 
 import java.util.Arrays;
 
+/**
+ * 
+ * @author Andiara
+ * Classe utilizada para realizar os testes com arrays.
+ *
+ */
 public class Classe {
+	
 	public static void main(String[] args) {
 
-		int[] numeros = new int[]{5,10,15,20,25,30,35,0};
+		int[] numeros = new int[] { 5, 10, 15, 20, 25, 30, 35, 0 };
 
 		for (int num : numeros) {
 			System.out.print(num + " ");
 
 		}
 		System.out.println();
-		
+
 		String[] nome = new String[] { "Alison", "Alicia", "Alana", "Andiara" };
 
 		Arrays.sort(nome);
