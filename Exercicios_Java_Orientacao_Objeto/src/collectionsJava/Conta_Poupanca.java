@@ -23,8 +23,10 @@ public class Conta_Poupanca extends Conta{
 	
 	}
 	
-	public Conta_Poupanca(double taxaRendimento) {
+	public Conta_Poupanca(double taxaRendimento,double saldo,String conta) {
 		this.taxaRendimento = taxaRendimento;
+		super.setSaldo(saldo);
+		super.setNumero(conta);
 		
 	}
 
