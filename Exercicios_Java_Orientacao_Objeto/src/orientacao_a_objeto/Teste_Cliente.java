@@ -6,7 +6,7 @@ public class Teste_Cliente {
 		// criando um objeto
 
 		Cliente cliente1 = new Cliente();
-		Cliente cliente2 = new Cliente();
+		//Cliente cliente2 = new Cliente();
 
 		cliente1.setNome("Andiara");
 		cliente1.setCodigo(1);

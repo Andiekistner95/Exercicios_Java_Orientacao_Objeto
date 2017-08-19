@@ -9,8 +9,8 @@ public class Teste_Conta_Agencia {
 		conta1.setLimite(400.00d);
 		conta1.setSaldo(320.00d);
 
-		Conta conta2 = new Conta("38621245");
-		Agencia ag2 = new Agencia(15);
+		//Conta conta2 = new Conta("38621245");
+		//Agencia ag2 = new Agencia(15);
 
 		/*conta2.agencia = ag2;
 		conta2.limite = 500.00d;

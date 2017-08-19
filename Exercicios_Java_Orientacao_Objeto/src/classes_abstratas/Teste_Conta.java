@@ -9,7 +9,10 @@ public static void main(String[] args) {
 	Agencia ag = new Agencia(12);
 	Cliente cliente = new Cliente(45, "William");
 	
-	
+	System.out.println(cc);
+	System.out.println(cp);
+	System.out.println(ag);
+	System.out.println(cliente);//tudo desnecessario,só pra sumir o erro
 	
 }
 }

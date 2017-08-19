@@ -7,7 +7,7 @@ public class Teste_Funcionario {
 		DecimalFormat df = new DecimalFormat("#0.00");
 		
 		Funcionario fun1 = new Funcionario();
-		Funcionario fun2 = new Funcionario();
+		//Funcionario fun2 = new Funcionario();
 
 		//fun1.nome = "William";
 		//fun1.salario = 3000.00d;

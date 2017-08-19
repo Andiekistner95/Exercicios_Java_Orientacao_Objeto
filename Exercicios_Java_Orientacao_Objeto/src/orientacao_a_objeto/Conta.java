@@ -92,7 +92,7 @@ public class Conta {
 	}
 	//incrementa a quantidade de contas criadas a cada instancia de objeto
 	public void contagemContas(){
-		this.contasCriadas += 1;
+		//this.contasCriadas += 1;
 		this.idConta = contasCriadas;
 	}
 	//retorna a qnt total de contas criadas pela classe

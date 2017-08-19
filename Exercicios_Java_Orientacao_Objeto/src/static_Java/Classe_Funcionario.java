@@ -21,5 +21,8 @@ DecimalFormat df = new DecimalFormat("#0.00");
 		Funcionario.diminuirVR(10);
 	
 		System.out.println("R$"+df.format(Funcionario.consutaVR()));
+		
+		System.out.println(f1);
+		System.out.println(f2);
 	}
 }

@@ -8,7 +8,7 @@ public class Teste_CartaoDeCredito {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 
 		CartaoDeCredito mastercard = new CartaoDeCredito(4512235689787458l);
-		CartaoDeCredito visa = new CartaoDeCredito(1020364598781040l);
+		//CartaoDeCredito visa = new CartaoDeCredito(1020364598781040l);
 
 		mastercard.setDataValidade(sdf.parse("12/02/2028"));
 		//visa.setDataValidade(dataValidade);= sdf.parse("05/07/2018");

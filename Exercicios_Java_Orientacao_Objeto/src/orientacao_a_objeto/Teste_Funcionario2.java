@@ -1,11 +1,9 @@
 package orientacao_a_objeto;
 
-import javax.swing.JOptionPane;
-
 public class Teste_Funcionario2 {
 	public static void main(String[] args) {
 
-		Funcionario funcionario = new Funcionario();
+		//Funcionario funcionario = new Funcionario();
 		
 		/*funcionario.nome = JOptionPane.showInputDialog("Informe o nome do funcionário");
 		funcionario.salario = Double.parseDouble(JOptionPane.showInputDialog("Informe o salário do funcionário"));

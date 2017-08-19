@@ -8,7 +8,7 @@ public static void main(String[] args) throws ParseException {
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 	
 	Aluno aluno1 = new Aluno();
-	Aluno aluno2 = new Aluno();
+	//Aluno aluno2 = new Aluno();
 	
 	aluno1.setNome("William");
 	aluno1.setRg("091456789-1");
